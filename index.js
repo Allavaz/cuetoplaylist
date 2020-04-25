@@ -2,8 +2,6 @@ const parser = require('cue-parser');
 
 const cuesheet = parser.parse(process.argv[2]);
 
-console.log(cuesheet.files[0].tracks[0].indexes[0]);
-
 cuesheet.files[0].tracks.forEach((item) => {
     let hour;
     let minute;
